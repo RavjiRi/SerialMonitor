@@ -1,4 +1,18 @@
-"""Checks for any connected microbits and reads the serial port for output."""
+"""
+Checks for any connected devices and reads the serial port for output.
+
+This program was written so there is an easy and quick way to read
+from the serial port without using the screen command and having to install
+any external libraries such as PySerial.
+
+Use this program in an IDE like IDLE and follow the simple instructions
+alternatively run this program through the command line with:
+python3 SerialMonitor.py "device name" "baudrate"
+
+Version: 8/10/24
+
+Author: RavjiRi
+"""
 
 from subprocess import Popen, PIPE
 from pty import openpty
@@ -13,7 +27,7 @@ SPECIAL_PRINT_CONDITIONS = {
     '/blue\r\n': lambda: print('\033[34m', end=''),
     '/pink\r\n': lambda: print('\033[95m', end=''),
     '/default\r\n': lambda: print('\033[0m', end=''),
-    'lalala': lambda: print('yay')
+    'lalala': lambda: print('yay')  # testing
     }
 
 '''
