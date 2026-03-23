@@ -2,7 +2,9 @@ Serial Monitor
 ==============
 Program Description
 --------------
-Checks for any connected devices and reads the serial port for output
+Checks for any connected devices and reads the serial port for output. This is designed for MacOS computers, could work on Linux.
+
+I have used this program when working with a MicroBit via USB through serial communication.
 
 How to install this project
 --------------
@@ -15,7 +17,7 @@ This project can also be installed from the GitHub website by downloading the zi
 
 How to run this project
 --------------
-Run this in any Python IDE such as IDLE or run through the command line using:
+Run this in a Python IDE such as IDLE or run through the command line using:
 ```bash
 python3 SerialMonitor.py "device name" "baudrate"
 ```
